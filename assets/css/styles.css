@@ -39,8 +39,9 @@ body {
 }
 
 .project-intro {
-  padding: 30px;
-  background-color: #8B4513;
+  padding: 20px;
+  text-align: center;
+  background-color: #A86932;
 }
 
 h1 {
