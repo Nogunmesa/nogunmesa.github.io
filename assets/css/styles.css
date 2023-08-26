@@ -31,6 +31,17 @@ body {
   max-width: 50%;
   height: auto;
 }
+
+.project-text {
+  padding-right: 50px;
+  flex: 1;
+}
+
+.project-video {
+  flex: 1;
+  padding-left: 80px;
+}
+
   
   /* Target the footer section */
   .footer {
