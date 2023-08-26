@@ -22,10 +22,6 @@ body {
   flex: 1;
 }
 
-.project-section {
-  display: flex;
-}
-
 .profile-image {
   flex: 1;
   padding-left: 50px;
@@ -34,6 +30,13 @@ body {
 .profile-image img {
   max-width: 50%;
   height: auto;
+}
+
+/* Target the project section */
+.project-section {
+  display: flex;
+  flex-direction: column; /* Arrange projects vertically */
+  align-items: center; /* Center content horizontally */
 }
 
 .project-text {
