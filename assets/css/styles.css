@@ -47,7 +47,7 @@ body {
 }
 
 .project-video video {
-  max-width: 100%; /* Adjust the max-width */
+  max-width: 50%; /* Adjust the max-width */
   height: auto;
 }
 
