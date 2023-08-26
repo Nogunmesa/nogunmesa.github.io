@@ -33,49 +33,26 @@ body {
 }
 
 /* Target the project section */
-.project-grid {
+.project-section {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; /* Arrange projects vertically */
+  align-items: center; /* Center content horizontally */
 }
 
-.project-item {
-  background-color: #111;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  position: relative;
-  transition: transform 0.3s; /* Add a transition for the transform property */
-}
-
-.project-item:hover {
-  transform: translateY(-10px);
-  transform: translateY(-15px); /* Apply the hover effect */
+.project-text {
+  padding-right: 50px;
+  flex: 1;
 }
 
 .project-video {
-  height: 200px;
-  overflow: hidden;
+  flex: 1;
+  padding-left: 80px;
 }
 
 .project-video video {
-  width: 100%;
+  width: 20.875rem; /* Adjust the max-width */
   height: auto;
-  object-fit: cover;
 }
-
-.project-details {
-  background-color: #000;
-  color: #fff;
-  padding: 15px;
-}
-
-.project-item:hover .project-details {
-  opacity: 1;
-}
-
 
   
   /* Target the footer section */
