@@ -35,6 +35,7 @@ body {
 /* Target the project section */
 .project-section {
   padding-top: 50px;
+  flex-direction: column;
 }
 
 .project-intro {
@@ -53,6 +54,7 @@ p{
 
 .project-card{
   background-color: aliceblue;
+  width: 20.875rem;
 }
   
   /* Target the footer section */
