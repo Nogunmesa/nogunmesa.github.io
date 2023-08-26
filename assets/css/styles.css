@@ -24,7 +24,6 @@ body {
 
 .project-section {
   display: flex;
-  align-items: center; /* Center content vertically */
 }
 
 .profile-image {
