@@ -33,26 +33,47 @@ body {
 }
 
 /* Target the project section */
-.project-section {
-  display: flex;
-  flex-direction: column; /* Arrange projects vertically */
-  align-items: center; /* Center content horizontally */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.project-text {
-  padding-right: 50px;
-  flex: 1;
+.project-item {
+  position: relative;
+  overflow: hidden;
 }
 
 .project-video {
-  flex: 1;
-  padding-left: 80px;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-video video {
-  max-width: 50%; /* Adjust the max-width */
+  width: 100%;
   height: auto;
 }
+
+.project-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-details {
+  opacity: 1;
+}
+
 
   
   /* Target the footer section */
