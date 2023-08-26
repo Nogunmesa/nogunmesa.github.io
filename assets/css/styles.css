@@ -34,26 +34,26 @@ body {
 
 /* Target the project section */
 .project-section {
-  display: flex;
-  flex-direction: column; /* Arrange projects vertically */
-  align-items: center; /* Center content horizontally */
+  padding-top: 50px;
 }
 
-.project-text {
-  padding-right: 50px;
-  flex: 1;
+.project-intro {
+  padding: 30px;
+  background-color: #8B4513;
 }
 
-.project-video {
-  flex: 1;
-  padding-left: 80px;
+h1 {
+  font: 300;
+  font-family: Lucida Sans;
 }
 
-.project-video video {
-  width: 20.875rem; /* Adjust the max-width */
-  height: auto;
+p{
+  font-family: Tahoma;
 }
 
+.project-card{
+  background-color: aliceblue;
+}
   
   /* Target the footer section */
   .footer {
