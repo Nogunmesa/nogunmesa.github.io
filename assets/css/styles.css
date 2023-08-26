@@ -47,10 +47,12 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
+  transition: transform 0.3s; /* Add a transition for the transform property */
 }
 
 .project-item:hover {
   transform: translateY(-10px);
+  transform: translateY(-15px); /* Apply the hover effect */
 }
 
 .project-video {
