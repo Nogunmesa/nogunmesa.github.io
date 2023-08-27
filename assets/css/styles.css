@@ -35,13 +35,13 @@ body {
 /* Target the project section */
 .project-section {
   padding-top: 50px;
-  flex-direction: column;
 }
 
 .project-intro {
   padding: 20px;
   text-align: center;
   background-color: burlywood;
+  color: white;
 }
 
 h1 {
@@ -53,9 +53,24 @@ p{
   font-family: Tahoma;
 }
 
+.project-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
 .project-card{
   background-color: aliceblue;
-  width: 20.875rem;
+  width: calc(33.3% - 20px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-card img{
+  max-width: 30%;
+  height: auto;
 }
   
   /* Target the footer section */
