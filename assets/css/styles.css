@@ -66,9 +66,10 @@ p{
 
 .project-card{
   background-color: aliceblue;
-  width: calc(33.3% - 20px);
+  flex-basis: calc(33.3% - 20px);
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .project-card img{
