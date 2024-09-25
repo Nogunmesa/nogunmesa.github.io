@@ -107,6 +107,103 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-content {
+    background-color: var(--secondary-light); /* Light Peach Background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-pink);
+    border-radius: 50%;
+    left: -5px; /* Adjust based on odd/even */
+    top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: auto;
+    right: -5px;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-item:hover::before {
+    background-color: var(--accent-green); /* Change color on hover */
+}
+
+h3 {
+    margin-top: 0;
+    color: var(--primary-dark);
+}
+
+/* Infographic Styles */
+.infographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--secondary-light); /* Light Peach Background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.infographic-item {
+    background-color: var(--primary-light); /* Light Blue Background */
+    border: 1px solid var(--accent-pink); /* Accent Pink Border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 90%; /* Make it responsive */
+    transition: transform 0.3s ease;
+}
+
+.infographic-item:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: var(--primary-dark);
+}
+
+p {
+    color: var(--secondary-dark);
+    text-align: center;
+}
+
 /* Buttons and Links */
 button, .quiz button {
     background-color: var(--accent-green); /* Pastel Green Button */
