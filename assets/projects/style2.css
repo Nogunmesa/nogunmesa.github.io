@@ -4,16 +4,17 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f4ebe8; /* Light Beige Background */
-    color: #495057; /* Dark Gray Text */
+    background-color: #FFE8D6; /* Light Peach Background */
+    color: #3D3D3D; /* Charcoal Gray Text */
 }
 
 /* Color Palette */
 :root {
-    --primary-dark: #495057;   /* Dark Gray */
-    --secondary-light: #f4ebe8; /* Light Beige */
-    --accent-pink: #ffccd5;     /* Soft Pastel Pink */
-    --muted-gray: #ced4da;      /* Muted Gray */
+    --primary-dark: #3D3D3D;   /* Charcoal Gray */
+    --secondary-light: #FFE8D6; /* Light Peach */
+    --accent-pink: #FAD1D8;     /* Pastel Pink */
+    --muted-gray: #D3D3D3;      /* Muted Gray */
+    --accent-green: #CDEAC0;    /* Pastel Green */
 }
 
 /* Header Styles */
@@ -27,7 +28,7 @@ header {
 }
 
 header .overlay {
-    background: rgba(255, 204, 213, 0.5); /* Slightly Transparent Pink */
+    background: rgba(250, 209, 216, 0.5); /* Slightly Transparent Pink */
     padding: 50px;
     border-radius: 10px;
 }
@@ -80,7 +81,7 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 60px auto;
     padding: 50px;
-    background-color: var(--secondary-light); /* Light Beige Section Background */
+    background-color: var(--secondary-light); /* Light Peach Section Background */
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft Shadow */
 }
@@ -108,7 +109,7 @@ nav ul li a:hover {
 
 /* Buttons and Links */
 button, .quiz button {
-    background-color: var(--accent-pink); /* Pink Button */
+    background-color: var(--accent-green); /* Pastel Green Button */
     color: var(--primary-dark);
     border: none;
     padding: 12px 30px;
@@ -119,7 +120,7 @@ button, .quiz button {
 }
 
 button:hover, .quiz button:hover {
-    background-color: #ffc2ca; /* Slightly Lighter Pink Hover */
+    background-color: #bfe8a6; /* Slightly Darker Green Hover */
 }
 
 /* Footer Styles */
