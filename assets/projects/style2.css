@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #F4F4F9; /* Light Off-White Background */
     color: #2C2C2C; /* Deep Charcoal Gray Text */
+    text-align: left; /* Ensures that all text is left-aligned globally */
 }
 
 /* Color Palette */
