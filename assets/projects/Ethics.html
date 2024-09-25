@@ -91,9 +91,6 @@
         <p>Ethics is about making decisions that respect the dignity and rights of others. In diverse settings, ethical decision-making requires cultural competence—understanding the cultural backgrounds and experiences of others and how these affect interactions.</p>
         <p>Diversity and inclusion go hand-in-hand with ethics. Organizations that value diversity aim to include different perspectives in decision-making, ensuring that all voices are heard. But diversity isn’t just about having different people in the room; it’s about creating an environment where those differences are respected and celebrated.</p>
         <p>Cultural competence involves recognizing our own biases, actively listening, and continually educating ourselves about cultures and identities that are different from our own.</p>
-        <div class="image-container">
-            <img src="ethics-model.png" alt="Ethical Decision Model">
-        </div>
         <h2>The Ethical Decision-Making Model</h2>
         <div class="infographic">
             <div class="infographic-item">
@@ -120,10 +117,7 @@
     <section id="history" class="section">
         <h2>Historical Trends & Organizational Culture</h2>
         <p>Historical events have shaped how organizations function and how technology has evolved. Understanding these trends is key to fostering inclusive organizational cultures.</p>
-        <div class="timeline">
-            <img src="timeline.png" alt="Historical Timeline">
-        </div>
-        <h2>How History Shapes the Present</h2>
+        <h3>How History Shapes the Present</h3>
         <p>
             History has had a profound impact on organizational cultures and the development of technology. 
             From exclusionary practices in hiring to the development of tools that only cater to certain groups, 
@@ -177,22 +171,60 @@
     </section>
     
 
-    <!-- Quiz Section -->
-    <section id="quiz" class="section">
-        <h2>Test Your Knowledge</h2>
-        <div class="quiz">
+<!-- Quiz Section -->
+<section id="quiz" class="section">
+    <h2>Test Your Knowledge</h2>
+    <div class="quiz">
+        <form id="quiz-form">
             <p><strong>Q1:</strong> What is intersectionality?</p>
-            <input type="radio" name="q1" value="a"> A theory of race<br>
-            <input type="radio" name="q1" value="b"> Overlap of multiple identities<br>
-            <input type="radio" name="q1" value="c"> A form of discrimination<br><br>
+            <label><input type="radio" name="q1" value="a"> A theory of race</label><br>
+            <label><input type="radio" name="q1" value="b"> Overlap of multiple identities</label><br>
+            <label><input type="radio" name="q1" value="c"> A form of discrimination</label><br><br>
 
             <p><strong>Q2:</strong> How does identity impact your experience in society?</p>
-            <input type="radio" name="q2" value="a"> It doesn’t<br>
-            <input type="radio" name="q2" value="b"> It affects interactions with others<br><br>
+            <label><input type="radio" name="q2" value="a"> It doesn’t</label><br>
+            <label><input type="radio" name="q2" value="b"> It affects interactions with others</label><br><br>
             
-            <button>Submit</button>
-        </div>
-    </section>
+            <button type="button" onclick="checkQuiz()">Submit</button>
+        </form>
+
+        <div id="quiz-result" style="display:none; margin-top:20px;"></div>
+    </div>
+</section>
+
+<script>
+function checkQuiz() {
+    const form = document.getElementById("quiz-form");
+    const resultDiv = document.getElementById("quiz-result");
+    
+    // Get user answers
+    const q1 = form.q1.value;
+    const q2 = form.q2.value;
+
+    // Check if all questions are answered
+    if (!q1 || !q2) {
+        resultDiv.innerHTML = "<p>Please answer all questions.</p>";
+        resultDiv.style.display = "block";
+        return;
+    }
+
+    // Define correct answers
+    const correctAnswers = {
+        q1: "b",  // Correct answer for question 1
+        q2: "b"   // Correct answer for question 2
+    };
+
+    // Calculate score
+    let score = 0;
+    if (q1 === correctAnswers.q1) score++;
+    if (q2 === correctAnswers.q2) score++;
+
+    // Display results
+    resultDiv.innerHTML = `<p>Your score is: ${score}/2</p>`;
+    resultDiv.style.display = "block";
+}
+</script>
+
 
     <!-- Footer Section -->
     <footer>
