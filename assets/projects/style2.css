@@ -4,31 +4,32 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #FFE8D6; /* Light Peach Background */
-    color: #3D3D3D; /* Charcoal Gray Text */
+    background-color: #F4F4F9; /* Light Off-White Background */
+    color: #2C2C2C; /* Deep Charcoal Gray Text */
 }
 
 /* Color Palette */
 :root {
-    --primary-dark: #3D3D3D;   /* Charcoal Gray */
-    --secondary-light: #FFE8D6; /* Light Peach */
-    --accent-pink: #FAD1D8;     /* Pastel Pink */
-    --muted-gray: #D3D3D3;      /* Muted Gray */
-    --accent-green: #CDEAC0;    /* Pastel Green */
+    --primary-dark: #2C2C2C;   /* Deep Charcoal Gray */
+    --secondary-light: #F4F4F9; /* Light Off-White */
+    --accent-pink: #F76C5E;     /* Coral Pink */
+    --muted-gray: #A0A4B8;      /* Soft Slate Gray */
+    --accent-green: #88C8BC;    /* Sage Green */
+    --primary-blue: #5A7D9A;    /* Muted Steel Blue */
 }
 
 /* Header Styles */
 header {
-    background: var(--accent-pink); /* Soft Pink Header */
-    color: var(--primary-dark);
+    background: var(--primary-blue); /* Muted Blue Header */
+    color: var(--secondary-light);
     padding: 120px 0;
     text-align: center;
     position: relative;
-    border-bottom: 8px solid var(--muted-gray); /* Subtle Divider */
+    border-bottom: 6px solid var(--accent-pink); /* Coral Pink Divider */
 }
 
 header .overlay {
-    background: rgba(250, 209, 216, 0.5); /* Slightly Transparent Pink */
+    background: rgba(90, 125, 154, 0.6); /* Slightly Transparent Blue */
     padding: 50px;
     border-radius: 10px;
 }
@@ -36,18 +37,18 @@ header .overlay {
 header h1 {
     font-size: 4em;
     margin: 0;
-    color: var(--primary-dark);
+    color: var(--secondary-light); /* Light Off-White */
 }
 
 header p {
     font-size: 1.5em;
     margin-top: 10px;
-    color: var(--primary-dark);
+    color: var(--secondary-light);
 }
 
 /* Navigation Styles */
 nav {
-    background-color: var(--muted-gray); /* Muted Gray Navigation */
+    background-color: var(--muted-gray); /* Soft Slate Gray Navigation */
     padding: 15px 0;
     text-align: center;
 }
@@ -65,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--primary-dark);
+    color: var(--secondary-light);
     text-decoration: none;
     font-size: 1.1em;
     padding: 5px 10px;
@@ -73,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--accent-pink); /* Pink Hover */
+    color: var(--accent-green); /* Sage Green Hover */
 }
 
 /* Section Styles */
@@ -81,7 +82,7 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 60px auto;
     padding: 50px;
-    background-color: var(--secondary-light); /* Light Peach Section Background */
+    background-color: var(--secondary-light); /* Light Off-White Section Background */
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft Shadow */
 }
@@ -138,7 +139,7 @@ nav ul li a:hover {
 }
 
 .timeline-content {
-    background-color: var(--secondary-light); /* Light Peach Background */
+    background-color: var(--secondary-light); /* Light Off-White Background */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -156,14 +157,14 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: var(--secondary-light); /* Light Peach Background */
+    background-color: var(--secondary-light); /* Light Off-White Background */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .infographic-item {
-    background-color: var(--primary-light); /* Light Blue Background */
-    border: 1px solid var(--accent-pink); /* Accent Pink Border */
+    background-color: var(--muted-gray); /* Soft Slate Gray Background */
+    border: 1px solid var(--accent-pink); /* Coral Pink Border */
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
@@ -181,8 +182,10 @@ p {
 }
 
 /* Buttons and Links */
-button, .quiz button {
-    background-color: var(--accent-green); /* Pastel Green Button */
+button, .quiz
+
+button {
+    background-color: var(--accent-green); /* Sage Green Button */
     color: var(--primary-dark);
     border: none;
     padding: 12px 30px;
@@ -193,7 +196,7 @@ button, .quiz button {
 }
 
 button:hover, .quiz button:hover {
-    background-color: #bfe8a6; /* Slightly Darker Green Hover */
+    background-color: #74b9a3; /* Slightly Darker Green Hover */
 }
 
 /* Footer Styles */
