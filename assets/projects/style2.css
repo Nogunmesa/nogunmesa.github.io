@@ -20,7 +20,7 @@ body {
 
 /* Header Styles */
 header {
-    background: var(--primary-blue); /* Muted Blue Header */
+    background: linear-gradient(135deg, var(--primary-blue), #3a5c73); /* Gradient for Header */
     color: var(--secondary-light);
     padding: 120px 0;
     text-align: center;
@@ -29,9 +29,10 @@ header {
 }
 
 header .overlay {
-    background: rgba(90, 125, 154, 0.6); /* Slightly Transparent Blue */
+    background: rgba(90, 125, 154, 0.7); /* Slightly More Transparent Blue */
     padding: 50px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for Overlay */
 }
 
 header h1 {
@@ -51,6 +52,7 @@ nav {
     background-color: var(--muted-gray); /* Soft Slate Gray Navigation */
     padding: 15px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for Navigation */
 }
 
 nav ul {
@@ -70,11 +72,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
     padding: 5px 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     color: var(--accent-green); /* Sage Green Hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background on Hover */
 }
 
 /* Section Styles */
@@ -84,12 +88,13 @@ nav ul li a:hover {
     padding: 50px;
     background-color: var(--secondary-light); /* Light Off-White Section Background */
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft Shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft Shadow */
 }
 
 .section h2 {
     color: var(--primary-dark);
     font-size: 2.8em;
+    margin-bottom: 20px; /* Extra spacing */
 }
 
 .section p {
@@ -98,10 +103,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Image Container */
 .image-container img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for Images */
 }
 
 .image-container img:hover {
@@ -126,6 +133,8 @@ nav ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for Timeline Items */
 }
 
 .timeline-item:nth-child(even) {
@@ -142,7 +151,7 @@ nav ul li a:hover {
     background-color: var(--secondary-light); /* Light Off-White Background */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for Content */
 }
 
 h3 {
@@ -159,12 +168,12 @@ h3 {
     padding: 20px;
     background-color: var(--secondary-light); /* Light Off-White Background */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for Infographic */
 }
 
 .infographic-item {
     background-color: var(--muted-gray); /* Soft Slate Gray Background */
-    border: 1px solid var(--accent-pink); /* Coral Pink Border */
+    border: 2px solid var(--accent-pink); /* Coral Pink Border */
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
@@ -174,6 +183,7 @@ h3 {
 
 .infographic-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 p {
@@ -182,21 +192,20 @@ p {
 }
 
 /* Buttons and Links */
-button, .quiz
-
 button {
     background-color: var(--accent-green); /* Sage Green Button */
     color: var(--primary-dark);
     border: none;
     padding: 12px 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
     border-radius: 5px;
     font-size: 1em;
 }
 
-button:hover, .quiz button:hover {
+button:hover {
     background-color: #74b9a3; /* Slightly Darker Green Hover */
+    transform: scale(1.05); /* Scale on hover */
 }
 
 /* Footer Styles */
@@ -205,6 +214,7 @@ footer {
     color: var(--primary-dark);
     text-align: center;
     padding: 30px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow for Footer */
 }
 
 footer p {
