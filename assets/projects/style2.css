@@ -113,22 +113,28 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeline-item {
     position: relative;
-    width: 50%;
+    width: 80%; /* Adjusted width for clarity */
+    margin: 20px 0; /* Spacing between items */
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    align-self: flex-start;
+    border-left: 4px solid var(--accent-pink); /* Left Border for Even Items */
 }
 
 .timeline-item:nth-child(odd) {
-    left: 0;
+    align-self: flex-end;
+    border-right: 4px solid var(--accent-pink); /* Right Border for Odd Items */
 }
 
 .timeline-content {
@@ -136,32 +142,6 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: var(--accent-pink);
-    border-radius: 50%;
-    left: -5px; /* Adjust based on odd/even */
-    top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.timeline-item:nth-child(even)::before {
-    left: auto;
-    right: -5px;
-}
-
-.timeline-item:hover {
-    transform: translateY(-5px);
-}
-
-.timeline-item:hover::before {
-    background-color: var(--accent-green); /* Change color on hover */
 }
 
 h3 {
@@ -195,12 +175,8 @@ h3 {
     transform: translateY(-5px);
 }
 
-h3 {
-    color: var(--primary-dark);
-}
-
 p {
-    color: var(--secondary-dark);
+    color: var(--primary-dark);
     text-align: center;
 }
 
@@ -244,5 +220,9 @@ footer p {
 
     .section {
         padding: 20px;
+    }
+
+    .timeline-item {
+        width: 90%; /* Adjust for smaller screens */
     }
 }
