@@ -188,7 +188,7 @@ h3 {
 
 p {
     color: var(--primary-dark);
-    text-align: center;
+    text-align: left;
 }
 
 /* Buttons and Links */
