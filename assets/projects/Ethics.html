@@ -157,7 +157,7 @@
             </div>
         </div>
         <div class="case-study">
-        <h3>Case Study: Google's Diversity Initiatives</h3>
+        <h2>Case Study: Google's Diversity Initiatives</h2>
         <p>
             Let’s explore how Google's efforts to enhance diversity aim to address historical exclusion in the tech industry. Despite some progress, challenges remain, as representation disparities persist at multiple organizational levels.
         </p>
@@ -255,5 +255,25 @@ function checkQuiz() {
         });
     });
 </script>
+
+// JavaScript to trigger in-view animation
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".timeline-item");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    items.forEach((item) => {
+        observer.observe(item);
+    });
+});
+
 </body>
 </html>
