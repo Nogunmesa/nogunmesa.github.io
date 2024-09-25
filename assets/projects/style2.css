@@ -39,13 +39,11 @@ header .overlay {
 header h1 {
     font-size: 3.5em;
     margin: 0;
-    color: var(--primary-pink); /* Pink for emphasis */
 }
 
 header p {
     font-size: 1.5em;
     margin-top: 10px;
-    color: var(--primary-blue); /* Blue for contrast */
 }
 
 /* Navigation Styles */
@@ -68,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--primary-pink); /* Pink for nav links */
+    color: var(--text-light);
     text-decoration: none;
     font-size: 1.1em;
     padding: 5px 10px;
@@ -76,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--primary-blue); /* Change hover to blue for contrast */
+    color: var(--primary-pink);
 }
 
 /* Section Styles */
@@ -90,7 +88,7 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    color: var(--primary-pink); /* More pink emphasis */
+    color: var(--primary-blue);
     font-size: 2.5em;
 }
 
@@ -111,7 +109,7 @@ nav ul li a:hover {
 
 .case-study h3 {
     font-size: 1.8em;
-    color: var(--primary-pink); /* Pink case study header */
+    color: var(--primary-pink);
 }
 
 .quiz p {
@@ -123,7 +121,7 @@ nav ul li a:hover {
 }
 
 .quiz button {
-    background-color: var(--primary-pink); /* Pink quiz button */
+    background-color: var(--primary-blue);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -133,7 +131,7 @@ nav ul li a:hover {
 }
 
 .quiz button:hover {
-    background-color: var(--primary-blue); /* Blue hover effect */
+    background-color: var(--primary-pink);
 }
 
 /* Footer Styles */
